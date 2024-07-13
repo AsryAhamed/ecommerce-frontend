@@ -1,0 +1,63 @@
+/* ProductCard.css */
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Add border-radius */
+    padding: 20px;
+    width: 220px; /* Adjusted to accommodate the image size */
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s;
+    background-image: url('https://images.unsplash.com/photo-1615715757401-f30e7b27b912?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdoaXRlJTIwJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img.product-image {
+    width: 130px; /* Adjusted width */
+    height: 130px; /* Adjusted height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.product-card a, .add-to-cart-button {
+    display: inline-block;
+    padding: 10px 15px; /* Same padding for both buttons */
+    background-color: #333; /* Default background color for links */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%; /* Make buttons full width */
+    text-align: center; /* Center text */
+}
+
+.product-card a:hover {
+    background-color: #555; /* Hover effect for links */
+}
+
+.add-to-cart-button {
+    background-color: #28a745;
+}
+
+.add-to-cart-button:hover {
+    background-color: #218838;
+}

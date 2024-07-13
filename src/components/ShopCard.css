@@ -1,0 +1,35 @@
+/* ShopCard.css */
+
+.shop-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.shop-card:hover {
+    transform: scale(1.05);
+}
+
+.shop-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.shop-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.shop-details p {
+    font-size: 1rem;
+    color: #555;
+}

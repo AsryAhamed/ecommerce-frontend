@@ -1,0 +1,28 @@
+/* Pagination.css */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Add margin-bottom to create space between pagination and footer */
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-prev, .navigation-next {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-prev:hover, .navigation-next:hover {
+    background-color: #007bff;
+    color: #fff;
+}

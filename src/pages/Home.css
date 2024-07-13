@@ -1,0 +1,158 @@
+/* Home.css */
+
+.home-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtMjE4YmF0Y2g5LW15bnQtMDEuanBn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/861/161/small/light-blue-background-gradient-wall-design-vector.jpg');
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 40px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.carousel img:last-child {
+    margin-right: 0;
+}
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.happy-customers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.happy-customers img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    padding: 4px 8px;
+    border: 1px solid hsl(0, 62%, 18%);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .active a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination-previous:hover,
+.pagination-next:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.disabled .pagination-link {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Hide page numbers */
+.pagination li:not(.pagination-previous):not(.pagination-next) {
+    display: none;
+}
+
+.promotions {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/861/161/small/light-blue-background-gradient-wall-design-vector.jpg');
+}
+
+.promotions h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.promotions p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.promotion-banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.promotions-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.promotions-button:hover {
+    background-color: #218838;
+}
